@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.cont{
+    font-family:Pacifico, cursive;
+    font-style:oblique;
+
+}
+.loginpage img{
+    height: 2vh;
+}

@@ -1,0 +1,7 @@
+Departments:
+1. electronics
+2. civil
+3. computer
+4. Industrial 
+5. Mechanical
+6. Auto Mobile

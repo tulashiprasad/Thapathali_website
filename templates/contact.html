@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+    		{% for message in messages %}
+<div class="alert alert-success text-center mb-0" role="alert">
+          <b>{{message}}</b>
+</div>
+		{% endfor %}
+<div class="container-fluid bg-secondary  border border-dark m-0 px-10">
+
+<div class="container-fluid w-50 bg-secondary text-light">
+	<h3>DO you have any queries?</h3>
+	<form method="post" action="/contact/">
+		{% csrf_token %}
+		<div class="mb-0">
+			<label for="exampleInputEmail1" class="form-label">Your Name:</label>
+			<input type="text" class="form-control" name = "name"id="exampleInputEmail1" aria-describedby="emailHelp">
+			<label for="exampleInputEmail2" class="form-label"  >Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail2" name="email" aria-describedby="emailHelp">
+			<label for="" class="form-label">Your Querry:</label>
+			<textarea  class="form-control" id="exampleInputEmail1" name="querry" cols="30" rows="4"></textarea>
+
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<div class="container mt-4">
+		<p style="text-align: center;"><b>Address:</b> Thapathali, Kathmandu, Nepal <br>
+			<b>Phone:</b> +977-01-4246465,4246307 <br>
+			<b>Mail:</b> info@tcioe.edu.np<br>
+			<b>Website:</b> <a href="http://tcioe.edu.np/" class="text-light">http://www.tcioe.edu.np</a>
+		</p>
+	</div>
+</div>
+</div>
+
+
+
+{% endblock body %}

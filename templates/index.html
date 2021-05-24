@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+    		{% for message in messages %}
+<div class="alert alert-success text-center mb-0" role="alert">
+          <b>{{message}}</b>
+</div>
+		{% endfor %}
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '1.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome TO Thapathali</h5>
+          <p>Proud to be Thapathalian</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+       <img src="{% static '2.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Engineering Campus Of Nepal</h5>
+          <p>Makes Your Dream Come True</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+       <img src="{% static '3.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Education Hub Of Nepal</h5>
+          <p>Secure Your Future Here</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<div class="container-fluid px-0 " >
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger navbar-brand mr-0" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Departments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="contanier-fluid bg-dark tex">
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0 text-primary">Electronics and Computer</h3>
+          <div class="mb-1 text-muted text-light">{{date}}</div>
+          <p class="card-text mb-auto text-light">This department deals with all the activities of Electronics and section. It encourages and motivates sttudents for their brignt future</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+			<img src="https://source.unsplash.com/200x200/?computer" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+
+	
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0 text-primary">Automobile And Mechanical</h3>
+		<div class="mb-1 text-muted text-light">{{date}}</div>
+          <p class="mb-auto text-light">This department deals with all the activities of Automobile Mechanical section. It encourages and motivates sttudents for their brignt future.</p>	
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        	<img src="https://source.unsplash.com/200x200/?cars" class="img-fluid" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contanier-fluid bg-dark">
+	<div class="row mb-2">
+		<div class="col-md-6">
+		  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+			<div class="col p-4 d-flex flex-column position-static">
+			  <h3 class="mb-0 text-primary">Civil</h3>
+			  <div class="mb-1 text-muted text-light">{{date}}</div>
+			  <p class="card-text mb-auto text-light">This department deals with all the activities of CIvil section. It encourages and motivates sttudents for their brignt future</p>
+	  
+			</div>
+			<div class="col-auto d-none d-lg-block">
+				<img src="https://source.unsplash.com/200x200/?bridges" class="img-fluid" alt="...">
+			</div>
+		  </div>
+		</div>
+	
+		
+		<div class="col-md-6">
+		  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+			<div class="col p-4 d-flex flex-column position-static">
+			  <h3 class="mb-0 text-primary">Architecture</h3>
+			<div class="mb-1 text-muted text-light">{{date}}</div>
+			  <p class="mb-auto text-light">This department deals with all the activities of Architecture section. It encourages and motivates sttudents for their brignt future.</p>	
+			</div>
+			<div class="col-auto d-none d-lg-block">
+				<img src="https://source.unsplash.com/200x200/?megastructures" class="img-fluid" alt="...">
+			</div>
+		  </div>
+		</div>
+	  </div>
+</div>
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-primary text-light">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+ {% endblock body %} 
